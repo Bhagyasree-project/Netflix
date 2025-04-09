@@ -33,13 +33,13 @@
     background:black;
     color: white;
     border: 1px solid white;
-    padding: 5px 5px;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    width:150px;
-    height:50px;
-    
+    width:100px;
+    height:40px;
+    margin-bottom: 20px;
+   
 }
 
 /* Sign-In Button */
@@ -61,7 +61,7 @@
 .logo1{
     margin-top: 300px;
     margin-left: 150px;
-    color:lightgray
+    color:lightgray;
 }
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -70,13 +70,7 @@ body {
     background-size: 90%; /* Adjust this to decrease the image width */
     background-position: center ; /* Centers the image */
     background-repeat: no-repeat;
-    
     height: 100vh;
-    
-    
-    
-    
-    
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
@@ -89,17 +83,24 @@ body {
     align-items: center; /* Center horizontally */
     text-align: center; /* Ensures all text inside is centered */
     height: 100vh; /* Full viewport height */
+    padding-top: 50px;
 }
 
 .movies {
     max-width: 80%; /* Prevents text from stretching too wide */
     font-size: 2rem; /* Adjust as needed */
     line-height: 1.2;
-    font-size: 70px;
+    font-size: 60px;
 }
-
-h2, p {
-    margin: 10px 0; /* Adds space between elements */
+.rate {
+    font-size: 25px;
+    color: white;
+    padding-left: 60px;
+}
+.ready {
+    font-size: 18px;
+    padding-left: 60px;
+    color: #f2f8f7;
 }
 /* Style for email input and button */
 .email-form {
@@ -107,6 +108,7 @@ h2, p {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-left: 20px;
     gap: 10px; /* Space between input and button */
 }
 
@@ -218,7 +220,7 @@ h2, p {
 }
 
 .now{
-    margin-right: 1200px;
+   margin-right: 950px;
 }
 .features-container {
     display: flex;
@@ -233,14 +235,15 @@ h2, p {
 .feature-box {
     background-color: #141414;
     border-radius: 10px;
-    padding: 20px;
-    
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+
     width: 20%; /* Adjust width to fit 4 in a row */
     min-width: 220px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
-
+.more {
+    margin-right: 950px;
+}
 
 
 h1 {
@@ -251,7 +254,7 @@ h1 {
 
 .img{
     width:50px;
-    margin-left: 230px;
+    margin-left: 200px;
 }
 p{
     color: gray;

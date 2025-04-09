@@ -1,185 +1,285 @@
 /* General Reset */
-.lg {
-    background-color: black;
-    color: red;
-    position: absolute;
-    margin-top: 0px;
-    margin-right: 2px;
-    border-radius: 5px;
-}
-.net {
-    background-color: black;
-    color: yellow;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 1000px;
-}
-.home {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
-.tv {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
-.mv {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
-.peo {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
-.my {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
-.lan {
-    padding-right: 850px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and General Styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  /* Navbar Styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.start {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Body and General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Logo Text and Page Title */
+.lg {
+  background-color: black;
+  color: red;
+  position: absolute;
+  margin-top: 0px;
+  margin-right: 2px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 2rem;
+  width: 40px;
+}
+
+.net {
+  background-color: black;
+  color: yellow;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 45px;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  height: 40px;
+}
+
+/* Nav Items List */
+.navbar .nav-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+/* Trending Section */
+.trending-section {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ff0000 #000;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+.movie-card {
+  position: relative;
+  min-width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Rank numbers on movies */
+.rank {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+/* Nav Links */
+.navbar .nav-items li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-items li a:hover {
+  color: #e50914;
+}
+
+/* Sign In Button */
+.navbar .signin {
+  background-color: #e50914;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .signin:hover {
+  background-color: #f40612;
+}
+
+/* Banner Section (Background video or image) */
+.banner {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+.banner video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.banner-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.banner-buttons {
+  margin-top: 20px;
+}
+
+.banner-buttons button {
+  background-color: #e50914;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons button:hover {
+  background-color: #f40612;
+}
+
+/* Movie Section Styling */
+.movie-section {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.movie-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.movie-item {
+  margin-right: 10px;
+}
+
+.movie-item video {
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.movie-item video:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+  padding: 20px;
+  background-color: black;
+  color: gray;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Scrollbar Styling for Movie Rows */
+.movie-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 10px;
+}
+
+.movie-row::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: transparent;
-    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar .nav-items {
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
-    z-index: 1000;
+    align-items: flex-start;
   }
-  
-  .navbar .logo {
-    height: 40px;
-  }
-  
+
   .navbar .signin {
-    background-color: #e50914;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-  
-  .navbar .signin:hover {
-    background-color: #f40612;
-  }
-  
-  /* Banner Section (Background video or image) */
-  .banner {
-    position: relative;
-    height: 100vh;
-    color: white;
-  }
-  
-  .banner video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-  }
-  
-  .banner-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .banner-title {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .banner-description {
-    font-size: 1.5rem;
+    align-self: flex-end;
     margin-top: 10px;
   }
-  
-  .banner-buttons {
-    margin-top: 20px;
-  }
-  
-  .banner-buttons button {
-    background-color: #e50914;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1rem;
-    margin-right: 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .banner-buttons button:hover {
-    background-color: #f40612;
-  }
-  
-  /* Movie Section Styling */
-  .movie-section {
-    margin-top: 50px;
-    padding: 20px;
-  }
-  
-  .movie-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .movie-row {
-    display: flex;
-    overflow-x: scroll;
-    padding-bottom: 20px;
-  }
-  
-  .movie-item {
-    margin-right: 10px;
-  }
-  
-  .movie-item video {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .movie-item video:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Footer Styling */
-  .footer {
-    padding: 20px;
-    background-color: black;
-    color: gray;
-    font-size: 0.9rem;
-  }
-  
+}

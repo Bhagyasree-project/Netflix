@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix - Main Page</title>
   <link rel="stylesheet" href="chat.css">
+  <script src="chat.js"></script>
 </head>
 <body>
+    <div class="start">
     <h1 class="lg">N</h1>
-    <p class="net">Netflix - Home - Netflix</p>
+    <p class="net">Netflix - Home - Netflix</p></div>
 
   <!-- Navigation Bar -->
-  <header class="navbar">
+  <nav class="navbar">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
-    <p class="home">Home</p>
-    <p class="tv">TV Shows</p>
-    <p class="mv">Movies</p>
-    <p class="peo">New & Popular</p>
-    <p class="my">My List</p>
-    <p class="lan">Browse by Languages</p>
+    <ul class="nav-items">
+      <li><a href="#" class="home">Home</a></li>
+      <li><a href="#" class="tv">TV Shows</a></li>
+      <li><a href="#" class="mv">Movies</a></li>
+      <li><a href="#" class="peo">New & Popular</a></li>
+      <li><a href="#" class="my">My List</a></li>
+      <li><a href="#" class="lan">Browse by Languages</a></li>
+    </ul>
     <button class="signin">Sign In</button>
-  </header>
+  </nav>
 
   <!-- Banner (Main Background Video or Image) -->
   <section class="banner">
@@ -62,8 +66,17 @@
         </video>
       </div>
       <!-- Add more movie items as needed -->
+
     </div>
   </section>
+  <section class="trending-section">
+    <h1 class="now">Trending Now</h2>
+    <div class="scroll-container">
+        <button class="scroll-btn left-btn">&#10094;</button> <!-- Left Arrow -->
+        <div class="movies-container" id="moviesContainer"></div>
+        <button class="scroll-btn right-btn">&#10095;</button> <!-- Right Arrow -->
+    </div>
+</section>
 
   <section class="movie-section">
     <h2>Top Picks for You</h2>
